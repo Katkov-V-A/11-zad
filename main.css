@@ -1,0 +1,287 @@
+/* Стили для ссылок */
+a {
+    color: black; /* Цвет текста черный */
+    transition: color 0.3s ease;
+    font-family: 'Century'; /* Плавный переход цвета */      
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:visited {
+    color: rgb(46, 204, 243);
+    font-family: 'Century'; /* Цвет текста черный для посещенных ссылок */
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+    color: rgb(255, 251, 25); /* Изменение цвета при наведении */
+}
+
+/* Общие стили для тела страницы */
+body {
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+    line-height: 1.6; /* Высота строки для лучшей читаемости */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 20px; /* Добавляем отступы */
+    background-image: url(BBG.jpg) ; /* Цвет фона страницы */
+}
+
+/* Стили для заголовков */
+h1, h2 {
+    text-align: center; /* Центрируем заголовки */
+    color: red; /* Цвет заголовков */
+}
+main {
+    background: #b8ecf3; /* Цвет фона основного контента */
+    padding: 20px; /* Отступы внутри основного контента */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта глубины */
+}
+
+/* Стили для подвала */
+footer {
+    text-align: left; /* Центрируем текст в подвале */
+    margin-top: 20px; /* Отступ сверху */
+    color: rgb(0, 0, 0); /* Цвет текста подвала */
+}
+/* Стили для кнопки "Наверх" */
+.scroll-to-top {
+    position: fixed; /* Фиксированное положение */
+    bottom: 20px; /* Отступ от нижней границы */
+    right: 20px; /* Отступ от правой границы */
+    background-color: rgba(82, 255, 111, 0.5); /* Цвет фона */
+    color: rgb(255, 255, 255); /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругление углов */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    font-size: 15px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+}
+
+.scroll-to-top:hover {
+    background-color: #c89a1e; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.scroll-to-top:focus {
+    background-color: #0095B6;
+    color: #CCCCFF;
+    outline: none; /* Убираем обводку при фокусе */
+}
+.gallery {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.gallery img {
+    width: 150px; /* Размер превью */
+    height: auto;
+    transition: 0.3s; /* Плавный переход */
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    color: white;
+    text-align: center;
+    opacity: 1; /* Скрыто по умолчанию */
+    transition: opacity 0.3s; /* Плавный переход */
+}
+
+.gallery:hover .caption {
+    background-color: rgba(183, 0, 255, 0.589);
+}
+header{
+    background-color: #a2fce8;
+}
+
+table{
+    background-color: white;
+}
+img {
+    border:3px dashed rgb(75, 31, 233);
+}
+
+fieldset{
+    background-color:#BEF574;
+}
+div.menu{
+    background-color: aqua;
+}
+a.ugol{
+    color: green;
+}
+p.text1{
+    font-family: serif;
+    font-size:x-small;
+    font-weight: normal;
+    font-style: normal;
+    color: #ff0000;
+    font-variant: small-caps;
+}
+p.text2{
+    font-family: sans-serif;
+    font-size:medium;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(0, 128, 0);
+    font-variant: normal;
+}
+p.text3{
+    font-family: monospace;
+    font-size:xx-large;
+    font-weight: lighter;
+    font-style: oblique;
+    color: blue;
+    font-variant: normal;
+}
+p.text4{
+    font-family: cursive;
+    font-size:12px;
+    font-weight: 100;
+    font-style: normal;
+    color: hsl(60, 100%, 50%);
+    font-variant: normal;
+}
+p.text5{
+    font-family: fantasy;
+    font-size:150%;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;    
+}
+input:focus{
+    background-color:  #A8E4A0;
+}
+tr.shapka{
+    background-color: red;
+    color: white;
+}
+tr.natur{
+    background-color: white;
+    color: blue;
+}
+tr.con{
+    background-color: white;
+}
+nav li{
+    list-style: url(wg.jpg);
+    padding-left: 10px;
+    height: 30px;
+}
+table.edu {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+table.edu th, table.edu td {
+	border: 1px solid #888;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+ 
+table.edu td:hover {
+
+    color: white;
+}
+table.edu td:hover:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: 0px; 
+	bottom: 0px;    
+	left: 0px;
+	border: 3px solid orange;
+}
+.VaLerik{
+    background: #f85ee4; /* Цвет фона */
+    width: 200px; /* Ширина */
+    margin: 0 10px 10px 0; /* Отступы */
+    padding: 10px 0; /* Поля сверху и снизу */
+    text-align: center; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+    }
+.VaLerik img {
+    border: 5px solid #444444; /* Параметры рамки */
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5)
+}
+.VaLerik p {
+    margin: 0; /* Отступы */
+}
+ul.manu {
+    width: 180px; /* Ширина меню */
+    list-style: none; /* Для списка убираем маркеры */
+    margin: 0; /* Нет отступов вокруг */
+    padding: 0; /* Убираем поля вокруг текста */
+    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+    font-size: 10pt; /* Размер названий в пункте меню */
+}
+li ul {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 165px; /* Сдвигаем подменю вправо */
+    margin-top: -2em; /* Сдвигаем подменю вверх */
+    }
+    li a {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 2.5px; /* Поля вокруг надписи */
+    text-decoration: none; /* Подчеркивание у ссылок убираем */
+    color: rgb(61, 219, 219) /* Цвет текста */
+    
+    }
+    li a:hover {
+    color: #ffe; /* Цвет текста активного пункта */
+    background-color: #5488af;
+    }
+    li:hover ul {
+    display: block; /* При выделении пункта курсором мыши отображается
+    подменю */
+    }
+ul.ty{
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 1030px; /* Сдвигаем подменю вправо */
+    margin-top: -2em; /* Сдвигаем подменю вверх */
+}
+@media screen and (max-width:600px) {
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:1000px) {
+    body{
+        background-image: url(bg4.jpg);
+    }
+    nav{
+        display: none;
+    }
+}
+@media screen and (max-width:640px){
+
+    nav{
+        display: inline;
+    }
+    nav1{
+        display: none;
+    }
+    header{
+        height: 30vh;
+    }
+    footer{
+        height: 20px;
+    }
+}
+
+
